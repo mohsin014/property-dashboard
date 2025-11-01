@@ -1,0 +1,59 @@
+/**
+ * Global Styles with Tailwind CSS
+ * 
+ * Imports Tailwind's base, component, and utility styles.
+ * Also includes custom global styles.
+ */
+
+/* Import Tailwind CSS layers */
+@tailwind base;       /* Normalize styles and base styles */
+@tailwind components; /* Component classes */
+@tailwind utilities;  /* Utility classes */
+
+/**
+ * Custom global styles
+ * These override or extend Tailwind's default styles
+ */
+
+/* Body styling */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Code block styling */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Line clamp utility (for truncating text) */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
